@@ -5,7 +5,7 @@ const middlewares = jsonServer.defaults({
   static: './build',
 });
 const port = process.env.PORT || 3000;
-const { users, messages } = require('../db.json');
+const { users, messages } = require('./db.json');
 
 server.use(middlewares);
 server.use(
